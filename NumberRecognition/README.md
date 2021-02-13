@@ -1,0 +1,1 @@
+This project is following a tutorial on how to use the Neural Network library, Keras.
