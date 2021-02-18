@@ -1,2 +1,5 @@
 # Ignore Packages #
 kerasenv
+.vscode
+resources
+__pycache__
