@@ -25,11 +25,9 @@ def main():
     print("cur_project_dir: " + cur_project_dir_path)
     print("cur_resources_dir: " + cur_resources_dir_path)
 
-    print("random number: " + str(rng.random()))
-
-    training_data = Data(training_data_filepath, training_data_images_dir_path, .7)
-    adam_model = Model(5, 28, 50, 1, 10, 128, 'adam')
-    adam_model.train_model(training_data.get_training_set_x(), training_data.get_validation_set_x(), training_data.get_training_set_y(), training_data.get_validation_set_y())
+    training_data = Data(training_data_filepath, training_data_images_dir_path, .3)
+    adam_model = Model(5, 784, 50, 1, 10, 128, 'adam')
+    adam_model.train_model(training_data.get_training_x(), training_data.get_training_y(), training_data.get_training_val_x(), training_data.get_training_val_y())
     #testing_data = Data(testing_data_filepath, testing_data_images_dir_path) # Not Needed in order to build, train and validate the model
     return
 
