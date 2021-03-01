@@ -6,7 +6,7 @@ from keras.layers import Dense
 import tensorflow as tf
 
 class Model:
-    def __init__(self, epochs:int, input_num_units:int, hidden_num_units:int, hidden_layers:int, output_num_units:int,batch_size:int, model_optimizer:str):
+    def __init__(self, epochs:int, input_num_units:int, hidden_num_units:int, hidden_layers:int, output_num_units:int, batch_size:int, model_optimizer:str):
         self._epochs = epochs
         self._input_num_units = input_num_units
         self._hidden_num_units = hidden_num_units

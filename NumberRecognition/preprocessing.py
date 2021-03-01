@@ -46,7 +46,7 @@ def convert_images_to_numpy_array(image_data, image_location):
     return converted_raw_image_array
 
 # Splits Data into training/validation sets based off the percentage passed in
-def split_data(converted_image_array, image_data, test__split_percentage):
+def split_data(converted_image_array, image_data, test_split_percentage):
     X = np.stack(converted_image_array)
     X /= 255.0 # normalize values to be between 0-1 (gray scale is between 0-255)
     X = X.reshape(-1, 784).astype('float32') # flatten numpy array from 1x28x28 to 1x784, where 784 is the total number of pixels for the gray scale images
@@ -57,6 +57,6 @@ def split_data(converted_image_array, image_data, test__split_percentage):
     min_max_scaler = preprocessing.MinMaxScaler()
     X_scale = min_max_scaler.fit_transform(X)
 
-    X_train, X_val, Y_train, Y_val = train_test_split(X_scale, Y, test_size=test__split_percentage)
+    X_train, X_val, Y_train, Y_val = train_test_split(X_scale, Y, test_size=test_split_percentage)
     return X_train, Y_train, X_val, Y_val
 
