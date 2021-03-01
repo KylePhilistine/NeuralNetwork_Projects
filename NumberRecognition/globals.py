@@ -1,7 +1,8 @@
-########## Imports ##########
+########## Global Imports ##########
 import os # paths
 import numpy as np # randomness
 
+########## Internal Imports ##########
 
 ########## Folder Names ##########
 root_dir_name = "NeuralNetwork_Projects"

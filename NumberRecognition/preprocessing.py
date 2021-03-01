@@ -1,4 +1,4 @@
-########## Imports ##########
+########## Global Imports ##########
 import pylab
 import os
 import numpy as np
@@ -9,6 +9,7 @@ import keras
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 
+########## Internal Imports ##########
 from globals import (rng, training_data_filepath, testing_data_filepath, sample_submission_data_filepath, training_data_images_dir_path)
 from errors import (failed_to_find_data_error, failed_to_find_training_data_error, failed_to_find_testing_data_error, failed_to_find_sample_submission_data_error)
 

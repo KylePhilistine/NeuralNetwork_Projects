@@ -1,3 +1,4 @@
+########## Global Imports ##########
 import os # paths
 
 # Neural Network Related Imports
@@ -8,11 +9,9 @@ from sklearn.metrics import accuracy_score
 from tensorflow import keras
 from tensorflow.keras import layers
 
-# Internal Imports
+########## Internal Imports ##########
 from data import Data
 from model import Model
-
-# Global Variables
 from globals import ( 
     nn_root_dir_path, cur_project_dir_path, cur_resources_dir_path, 
     training_data_filepath, training_data_images_dir_path, rng,

@@ -1,7 +1,9 @@
-########## Imports ##########
+########## Global Imports ##########
+import pandas as pd
+
+########## Internal Imports ##########
 from preprocessing import get_data_from_csv, convert_images_to_numpy_array, split_data
 from errors import failed_to_load_data_for_class
-import pandas as pd
 
 
 class Data:

@@ -1,9 +1,10 @@
-from data import Data
-
+########## Global Imports ##########
 from keras.models import Sequential
 from keras.layers import Dense
-
 import tensorflow as tf
+
+########## Internal Imports ##########
+from data import Data
 
 class Model:
     def __init__(self, epochs:int, input_num_units:int, hidden_num_units:int, hidden_layers:int, output_num_units:int, batch_size:int, model_optimizer:str):
